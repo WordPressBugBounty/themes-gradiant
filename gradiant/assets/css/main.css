@@ -790,7 +790,7 @@ div.shopping-cart ul a.remove {
 
 
 .info-wrapper2 .widget.widget-contact {
-    padding: 45.5px 32px;
+    padding: 47px 32px;
     border-radius: 5px;
     background: var(--sp-gradient1);
 }
@@ -825,8 +825,8 @@ div.shopping-cart ul a.remove {
 }
 
 .info-wrapper2 .widget.widget-contact .contact-area span.title {
-    font-size: 27px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -3468,3 +3468,137 @@ figure.gallery-item .gallery-popup-icon a:last-child {
 blockquote.wp-block-quote.has-text-color p,blockquote.wp-block-quote.has-text-color p var,blockquote.wp-block-quote.has-text-color p cite,blockquote.wp-block-quote.has-text-color cite {
 	color: inherit;
 }
+
+
+/* == Info Section Block Css == */
+.info-section-one .info-wrapper.av-column-2 .widget-contact, .info-section-one .info-wrapper.av-column-4 .widget-contact, .info-section-one .info-wrapper.av-column-3 .widget-contact {
+	border-left: 0;
+}
+
+/* Start Style 6 GradiantX css */
+
+.info-section-one {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+.info-section-one {
+	padding:0;
+	top: -12px;
+    position: relative;
+}
+}
+
+@media (max-width: 992px) {
+	.info-section-one .info-wrapper {
+		margin-bottom: 20px;
+	}
+}
+
+ .info-section-one .info-wrapper2 {
+    background: transparent;
+}
+
+ .info-section-one .info-wrapper2.style-6 .widget-contact {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+  .info-section-one .info-wrapper2.style-6 .widget-contact::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 110px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background: var(--sp-gradient1) ;
+	border-radius: 5px 0 0 5px;
+}
+
+ .info-section-one .contact-info a {
+    text-decoration: none;
+    
+}
+
+.info-section-one .contact-info a span {
+    
+    font-size: 22px;
+    background: var(--sp-secondary);
+    background-clip: text;
+    color: transparent;
+
+}
+
+.info-wrapper2.style-6 .widget.widget-contact .contact-area span.text {
+	font-size: 20px;
+    font-weight: 700;
+    background: var(--sp-secondary);
+    background-clip: text;
+    color: transparent;
+}
+
+.info-wrapper2.style-6 .widget.widget-contact .contact-area .contact-icon{
+	width: 60px;
+    height: 60px;
+}
+
+.info-wrapper2.style-6 .widget-contact .contact-icon {
+    background: var(--sp-secondary);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-section-one .info-wrapper2.style-6 .widget-contact .contact-icon i {
+	font-size: 40px;
+}
+
+ .av-btn i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+ .av-btn {
+    padding: 3px 12px;
+    line-height: 40px;
+}
+
+.av-columns-area [class*='column-2']  {
+    border-radius: 5px !important;
+}
+
+.av-columns-area [class*='column-2'] + .av-column-2  {
+    border-radius: 0 5px 5px 0 !important;
+}
+.av-columns-area [class*='column-2']:has(+ .av-column-2)  {
+    border-radius:  5px 0 0 5px  !important;
+}
+
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .info-section-one .info-wrapper2 .widget-contact .contact-area .title {
+        font-size: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .info-section-one .widget-contact .contact-area .title {
+        font-size: 18px;
+    }
+}
+
+.info-wrapper2.style-6 .widget.widget-contact .contact-area span.title {
+    font-size: 16px;
+    font-weight: 400;
+	color: var(--sp-secondary);
+	margin: 0;
+}
+
+.info-section-one .info-wrapper.av-column-2 + .av-column-2 .widget-contact {
+	border-left: 1px solid rgb(189 189 189 / 0.45);
+}
+/* End Style 6 css */
