@@ -727,7 +727,7 @@ div.shopping-cart ul a.remove {
 /*===== 07. Info Section =====*/
 
 .info-section {
-    margin-top: -80px;
+    margin-top: -77px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -3475,18 +3475,17 @@ blockquote.wp-block-quote.has-text-color p,blockquote.wp-block-quote.has-text-co
 	border-left: 0;
 }
 
-/* Start Style 6 GradiantX css */
+/* Start: Style 6 GradiantX Css */
 
 .info-section-one {
     position: relative;
 }
 
 @media (min-width: 992px) {
-.info-section-one {
-	padding:0;
-	top: -12px;
-    position: relative;
-}
+	.info-section-one {
+		padding:0;
+		position: relative;
+	}
 }
 
 @media (max-width: 992px) {
@@ -3503,7 +3502,8 @@ blockquote.wp-block-quote.has-text-color p,blockquote.wp-block-quote.has-text-co
     position: relative;
     background: #fff;
     border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 1px 2px;
+	padding: 42px 22px;
 }
 
   .info-section-one .info-wrapper2.style-6 .widget-contact::before {
@@ -3541,8 +3541,8 @@ blockquote.wp-block-quote.has-text-color p,blockquote.wp-block-quote.has-text-co
 }
 
 .info-wrapper2.style-6 .widget.widget-contact .contact-area .contact-icon{
-	width: 60px;
-    height: 60px;
+	width: 70px;
+    height: 70px;
 }
 
 .info-wrapper2.style-6 .widget-contact .contact-icon {
@@ -3601,4 +3601,180 @@ blockquote.wp-block-quote.has-text-color p,blockquote.wp-block-quote.has-text-co
 .info-section-one .info-wrapper.av-column-2 + .av-column-2 .widget-contact {
 	border-left: 1px solid rgb(189 189 189 / 0.45);
 }
-/* End Style 6 css */
+/* End: GradiantX Style 6 Css */
+
+/* End: ColorFlow Style 4 Info Box Css */
+
+.info-section-one .style-4 .widget-contact .contact-area {
+    flex-direction: row;
+}
+.info-section-one .header-8-info{
+    background: none;
+}
+.info-section-one .style-4 .contact-info .title {
+color: var(--sp-secondary);
+margin-bottom: 5px;
+}
+.info-section-one .contact-info a {
+    text-decoration: none;
+}
+.info-section-one .contact-info .description p {
+    color: #000000;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.info-section-one .style-4 .widget-contact {
+    padding: 10px;
+    border-radius: 3%;
+    background: linear-gradient(116deg, var(--sp-primary) 0%, var(--sp-primary2) 43%, var(--sp-secondary) 45%, var(--sp-secondary2) 65%);
+}
+.info-section-one .style-4 .widget-contact .contact-area {
+    background-color: #fff;
+    padding: 10px 10px;
+	justify-content: left;
+}
+.info-section-one .style-4 .contact-area .contact-icon i {
+	font-size: 30px;
+}
+.info-section-one .contact-area .contact-icon i {
+   background: #fff;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+ .info-section-one .style-4 .widget-contact .contact-icon {
+    background: linear-gradient(90deg, var(--sp-primary2) 36%, var(--sp-primary) 124%);
+    height: 114px;
+    width: 50px;
+    justify-content: center;
+    border-radius: 5%;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+ .info-section-one .widget-contact .contact-info {
+    text-align: start;
+}
+.info-section-one .info-wrapper.style-4  .contact-info span.text{
+	font-size: 20px;
+}
+.info-section-one .info-wrapper .contact-info span.text{
+	color: var(--sp-secondary);
+	font-weight: 600;
+}
+.info-section-one .info-wrapper.style-4 {
+	margin: 0 15px;
+	background: transparent;
+	padding:0;
+}
+.info-wrapper2.style-4 .widget.widget-contact .contact-info .text{
+	color: var(--sp-secondary);
+	font-weight: 700;
+}
+.info-wrapper2.style-4 .widget.widget-contact .contact-info .description{
+	font-size: 14px;
+	font-weight: 400;
+}
+@media (max-width: 767px) {
+	.info-section-one .widget-contact .contact-area {
+		justify-content: left;
+		text-align: left;
+	}
+}
+@media (min-width: 992px) {
+	.info-section-one.av-py-default{
+		padding: 100px 0 0 0;
+	}
+}
+@media (max-width: 992px) {
+	.info-section-one .info-wrapper.style-4{
+		margin-bottom: 30px;
+	}
+}
+
+/* End: ColorFlow Info Box Css */
+
+/* Start: Style 5 Shadiant Info Box Css */
+.info-section .style-5 .widget .contact-above {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--sp-primary2);
+}
+.info-section-one .style-5 {
+    background: transparent;
+}
+.info-wrapper2.style-5 .widget.widget-contact {
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 0;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 1px 2px;
+}
+.info-section-one .style-5 .widget:hover {
+    background: var(--sp-gradient1);
+}
+.info-section-one .style-5 .widget:hover .contact-above {
+    border-bottom: 1px solid #fff;
+}
+.info-section-one .style-5 .widget:hover .contact-icon {
+    background: #FFFFFF;
+}
+.info-section-one .style-5 .widget:hover .contact-icon i {
+    background: var(--sp-gradient1);
+    background-clip: text;
+    -webkit-text-fill-color:var(--sp-primary) ;
+}
+.info-section-one .style-5 .widget:hover .contact-below .contact-info .description {
+    color: #fff;
+}
+.info-section .style-5 .contact-above .contact-info a {
+    text-decoration: none;
+}
+.info-wrapper2.style-5 .widget.widget-contact .contact-area span.title  {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--sp-secondary);
+    text-align: start;
+}
+.info-wrapper2.style-5 .widget.widget-contact:hover .contact-area span.title {
+    color: #fff;
+}
+.info-section-one .style-5 .widget-contact .contact-area {
+    display: block;
+}
+.info-section-one .style-5 .widget-contact .contact-icon{
+    margin-right: 10px;
+    margin-bottom: 0;
+    background: var(--sp-gradient1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-top-left-radius: 5px;
+}
+.info-section-one .style-5 .contact-icon i {
+    background-color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: #fff;
+    font-size: 45px;
+}
+.style-5 .contact-below .contact-info .description {
+    color: #000;
+    text-align: start;
+}
+.style-5 .contact-below .contact-info .description p {
+    margin-bottom: 0;
+	font-size: 16px;
+}
+
+.info-section-one .style-5 .widget-contact .contact-area:hover p{
+	color: #fff;
+}
+
+.style-5 .contact-below .contact-info {
+    padding: 20px;
+    border-bottom: 2px solid var(--sp-primary2);
+    width: 100%;
+}
+
+/* End: Style 5 Shadiant Info Box Css */
