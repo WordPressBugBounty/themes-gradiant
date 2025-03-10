@@ -39,7 +39,7 @@ $gradiant_footer_effect_enable	= get_theme_mod('footer_effect_enable','1');
 		
 		<?php
 			}
-			$gradiant_footer_first_img 	= get_theme_mod('footer_first_img',esc_url(get_template_directory_uri() .'/assets/images/logo2.png'));
+			$gradiant_footer_first_img 	= get_theme_mod('footer_first_img');
 			if ( function_exists( 'gradiant_get_social_icon_default' ) ) :
 				$gradiant_footer_social_icons 	= get_theme_mod('footer_social_icons',gradiant_get_social_icon_default());
 			else:

@@ -43,7 +43,7 @@ $selective_refresh = isset( $wp_customize->selective_refresh ) ? 'postMessage' :
     $wp_customize->add_setting( 
     	'footer_first_img' , 
     	array(
-			'default' 			=> esc_url(get_template_directory_uri() .'/assets/images/logo2.png'),
+			// 'default' 			=> esc_url(get_template_directory_uri() .'/assets/images/logo2.png'),
 			'capability'     	=> 'edit_theme_options',
 			'sanitize_callback' => 'gradiant_sanitize_url',	
 		) 
