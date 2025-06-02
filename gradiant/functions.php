@@ -5,7 +5,7 @@ function gradiant_setup() {
 /**
  * Define Theme Version
  */
-define( 'GRADIANT_THEME_VERSION', '15.1' );
+define( 'GRADIANT_THEME_VERSION', '15.2' );
 
 // Root path/URI.
 define( 'GRADIANT_PARENT_DIR', get_template_directory() );
