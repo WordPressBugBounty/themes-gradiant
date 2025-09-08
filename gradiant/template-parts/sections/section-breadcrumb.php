@@ -13,58 +13,68 @@ if($gradiant_hs_breadcrumb == '1') {
 						<h2>
 							<?php 
 								if ( is_home() || is_front_page()):
-
-									single_post_title();
+								single_post_title();
+						
+							elseif ( is_day() ) :
 							
-								elseif ( is_day() ) : 
+								printf( __( 'Daily Archives: %s', 'mega-mart' ), get_the_date() );
+							
+							elseif ( is_month() ) :
+							
+								printf( __( 'Monthly Archives: %s', 'mega-mart' ), (get_the_date( 'F Y' ) ));
 								
-									printf( __( 'Daily Archives: %s', 'gradiant' ), get_the_date() );
+							elseif ( is_year() ) :
+							
+								printf( __( 'Yearly Archives: %s', 'mega-mart' ), (get_the_date( 'Y' ) ) );
 								
-								elseif ( is_month() ) :
+							elseif ( is_category() ) :
+							
+								printf( __( 'Category Archives: %s', 'mega-mart' ), (single_cat_title( '', false ) ));
+							elseif ( is_tag() ) :
+							
+								printf( __( 'Tag Archives: %s', 'mega-mart' ), (single_tag_title( '', false ) ));
 								
-									printf( __( 'Monthly Archives: %s', 'gradiant' ), (get_the_date( 'F Y' ) ));
-									
-								elseif ( is_year() ) :
+							elseif ( is_404() ) :
+								printf( __( 'Error 404', 'mega-mart' ));
 								
-									printf( __( 'Yearly Archives: %s', 'gradiant' ), (get_the_date( 'Y' ) ) );
-									
-								elseif ( is_category() ) :
+							elseif ( is_author() ) :
+							
+								printf( __( 'Author: %s', 'mega-mart' ), (get_the_author( '', false ) ));		
+							
+							elseif ( is_tax( 'portfolio_categories' ) ) :
+								printf( __( 'Portfolio Categories: %s', 'mega-mart' ), (single_term_title( '', false ) ));	
 								
-									printf( __( 'Category Archives: %s', 'gradiant' ), (single_cat_title( '', false ) ));
-
-								elseif ( is_tag() ) :
+							elseif ( is_tax( 'pricing_categories' ) ) :
+								printf( __( 'Pricing Categories: %s', 'mega-mart' ), (single_term_title( '', false ) ));	
 								
-									printf( __( 'Tag Archives: %s', 'gradiant' ), (single_tag_title( '', false ) ));
-									
-								elseif ( is_404() ) :
-
-									printf( __( 'Error 404', 'gradiant' ));
-									
-								elseif ( is_author() ) :
+							elseif ( class_exists( 'woocommerce' ) ) :
 								
-									printf( __( 'Author: %s', 'gradiant' ), (get_the_author( '', false ) ));
-									
-								elseif ( class_exists( 'woocommerce' ) ) : 
-									
-									if ( is_shop() ) {
-										woocommerce_page_title();
+								if ( is_shop() ) {
+									woocommerce_page_title();
+								}
+								
+								elseif ( is_cart() ) {
+									the_title();
+								}
+								
+								elseif ( is_checkout() ) {
+									the_title();
+								}
+								
+								elseif ( is_product_category() ) {
+									$term = get_queried_object();
+									if ( $term && ! is_wp_error( $term ) ) {
+										echo $term->name;
 									}
+								}
+								
+								else {
+									the_title();
+								}
+							else :
+									the_title();
 									
-									elseif ( is_cart() ) {
-										the_title();
-									}
-									
-									elseif ( is_checkout() ) {
-										the_title();
-									}
-									
-									else {
-										the_title();
-									}
-								else :
-										the_title();
-										
-								endif;
+							endif;
 									
 							?>
 						</h2>	
