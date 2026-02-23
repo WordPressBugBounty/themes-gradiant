@@ -17,35 +17,35 @@ if($gradiant_hs_breadcrumb == '1') {
 						
 							elseif ( is_day() ) :
 							
-								printf( __( 'Daily Archives: %s', 'mega-mart' ), get_the_date() );
+								printf( __( 'Daily Archives: %s', 'gradiant' ), get_the_date() );
 							
 							elseif ( is_month() ) :
 							
-								printf( __( 'Monthly Archives: %s', 'mega-mart' ), (get_the_date( 'F Y' ) ));
+								printf( __( 'Monthly Archives: %s', 'gradiant' ), (get_the_date( 'F Y' ) ));
 								
 							elseif ( is_year() ) :
 							
-								printf( __( 'Yearly Archives: %s', 'mega-mart' ), (get_the_date( 'Y' ) ) );
+								printf( __( 'Yearly Archives: %s', 'gradiant' ), (get_the_date( 'Y' ) ) );
 								
 							elseif ( is_category() ) :
 							
-								printf( __( 'Category Archives: %s', 'mega-mart' ), (single_cat_title( '', false ) ));
+								printf( __( 'Category Archives: %s', 'gradiant' ), (single_cat_title( '', false ) ));
 							elseif ( is_tag() ) :
 							
-								printf( __( 'Tag Archives: %s', 'mega-mart' ), (single_tag_title( '', false ) ));
+								printf( __( 'Tag Archives: %s', 'gradiant' ), (single_tag_title( '', false ) ));
 								
 							elseif ( is_404() ) :
-								printf( __( 'Error 404', 'mega-mart' ));
+								printf( __( 'Error 404', 'gradiant' ));
 								
 							elseif ( is_author() ) :
 							
-								printf( __( 'Author: %s', 'mega-mart' ), (get_the_author( '', false ) ));		
+								printf( __( 'Author: %s', 'gradiant' ), (get_the_author( '', false ) ));		
 							
 							elseif ( is_tax( 'portfolio_categories' ) ) :
-								printf( __( 'Portfolio Categories: %s', 'mega-mart' ), (single_term_title( '', false ) ));	
+								printf( __( 'Portfolio Categories: %s', 'gradiant' ), (single_term_title( '', false ) ));	
 								
 							elseif ( is_tax( 'pricing_categories' ) ) :
-								printf( __( 'Pricing Categories: %s', 'mega-mart' ), (single_term_title( '', false ) ));	
+								printf( __( 'Pricing Categories: %s', 'gradiant' ), (single_term_title( '', false ) ));	
 								
 							elseif ( class_exists( 'woocommerce' ) ) :
 								
