@@ -4,7 +4,7 @@ Theme URI: https://www.nayrathemes.com/gradiant-free/
 Author: Nayra Themes
 Author URI: https://www.nayrathemes.com/
 Description: A powerful next generation theme for upcoming generations and traditional UI that focuses on the color combinations of solid and gradient colors, along with cool animations and attractive features. It's perfect for any type of business. View the demo of Gradiant Pro https://www.nayrathemes.com/demo/pro/?theme=gradiant
-Version: 21.7
+Version: 21.8
 Tested up to: 7.0
 Requires PHP: 7.4
 Requires at least: 4.7
@@ -829,4 +829,10 @@ a.wp-block-latest-posts__post-title:focus {
 
 .woocommerce .summary .product_meta>span a {
    text-decoration: none;
+}
+
+.accordion-section .button-secondary:hover,
+.wp-core-ui .accordion-section .button-secondary:focus {
+   border: 1px solid #fff;
+   color: #fff;
 }
